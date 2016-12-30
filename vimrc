@@ -113,3 +113,4 @@ set termencoding=utf-8
 set fileformats=unix
 "set encoding=prc
 
+"›kkk
