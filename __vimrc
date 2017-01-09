@@ -41,7 +41,7 @@ set showcmd
 set guifont=Courier\ New:h10
 set hlsearch
 
-"Personal Settings. ç†ç”±pathogenè¿›è¡Œæ’ä»¶çš„åŠ è½½
+"Personal Settings. ÀíÓÉpathogen½øĞĞ²å¼şµÄ¼ÓÔØ
 "More to be added soon.
 execute pathogen#infect()    
 filetype plugin indent on
@@ -51,42 +51,42 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 "Set Color Scheme and Font Options
 colorscheme kolor
-set guifont=Consolas:h12
+set guifont=Consolas:h11
 "set line no, buffer, search, highlight, autoindent and more.
 set nu
 set hidden
-set ignorecase   "å¤§å°ä¸æ•æ„Ÿ
+set ignorecase   "´óĞ¡²»Ãô¸Ğ
 set smartcase
 set showmatch
-set ruler     "æ˜¾ç¤ºå…‰æ ‡ä½ç½®
+set ruler     "ÏÔÊ¾¹â±êÎ»ÖÃ
 set vb
 set viminfo+=n$VIM/_viminfo
 set noerrorbells
 set showcmd
-set mouse=a        "é¼ æ ‡æ”¯æŒ
+set mouse=a        "Êó±êÖ§³Ö
 set history=1000
 set undolevels=1000
 
-"ä»ç¬¬ä¸‰å±‚å±‚æ¬¡æ˜¾ç¤ºç¼©è¿›
+"´ÓµÚÈı²ã²ã´ÎÏÔÊ¾Ëõ½ø
 let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_start_level=3
+let g:indent_guides_start_level=4
 :nmap <silent> <Leader>i <Plug>IndentGuidesToggle
-set foldmethod=syntax    "æŠ˜å  " æç¤ºï¼šå‘½ä»¤zaï¼Œæ‰“å¼€æˆ–å…³é—­å½“å‰æŠ˜å ï¼›zMï¼Œå…³é—­æ‰€æœ‰æŠ˜å ï¼›zRï¼Œæ‰“å¼€æ‰€æœ‰æŠ˜å ã€‚
-set wildmenu			"å‘½ä»¤è¡¥é½
-set incsearch        "å®æ—¶æœç´¢
+set foldmethod=syntax    "ÕÛµş " ÌáÊ¾£ºÃüÁîza£¬´ò¿ª»ò¹Ø±Õµ±Ç°ÕÛµş£»zM£¬¹Ø±ÕËùÓĞÕÛµş£»zR£¬´ò¿ªËùÓĞÕÛµş¡£
+set wildmenu			"ÃüÁî²¹Æë
+set incsearch        "ÊµÊ±ËÑË÷
 
-" é«˜äº®æ˜¾ç¤ºå½“å‰è¡Œ/åˆ—
+" ¸ßÁÁÏÔÊ¾µ±Ç°ĞĞ/ÁĞ
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline
 set cursorcolumn
 
-set autoindent        " è®¾ç½®è‡ªåŠ¨å¯¹é½(ç¼©è¿›)ï¼šå³æ¯è¡Œçš„ç¼©è¿›å€¼ä¸ä¸Šä¸€è¡Œç›¸ç­‰ï¼›ä½¿ç”¨ noautoindent å–æ¶ˆè®¾ç½®
-set smartindent        " æ™ºèƒ½å¯¹é½æ–¹å¼
-set showmatch        " è®¾ç½®åŒ¹é…æ¨¡å¼ï¼Œæ˜¾ç¤ºåŒ¹é…çš„æ‹¬å·
-set fileencodings=utf-8,gb18030,gbk,big5   "è®¾ç½®æ ¼å¼å­—ä½“ç­‰
+set autoindent        " ÉèÖÃ×Ô¶¯¶ÔÆë(Ëõ½ø)£º¼´Ã¿ĞĞµÄËõ½øÖµÓëÉÏÒ»ĞĞÏàµÈ£»Ê¹ÓÃ noautoindent È¡ÏûÉèÖÃ
+set smartindent        " ÖÇÄÜ¶ÔÆë·½Ê½
+set showmatch        " ÉèÖÃÆ¥ÅäÄ£Ê½£¬ÏÔÊ¾Æ¥ÅäµÄÀ¨ºÅ
+set fileencodings=utf-8,gb18030,gbk,big5   "ÉèÖÃ¸ñÊ½×ÖÌåµÈ
 
-" NERD tree  "æ·»åŠ æ–‡ä»¶æµè§ˆçª—å£"
+" NERD tree  "Ìí¼ÓÎÄ¼şä¯ÀÀ´°¿Ú"
 let NERDChristmasTree=0
 let NERDTreeWinSize=35
 let NERDTreeChDirMode=2
@@ -100,13 +100,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Open a NERDTree
 nmap <F5> :NERDTreeToggle<cr>
 
-"ä½¿ç”¨tagbar 
+"Ê¹ÓÃtagbar 
 nmap <F8> :TagbarToggle<CR> 
-" Quicker window movement
+" Quicker window movement ÒÆ¶¯´°¿Ú¿ì½İ¼ü
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-
-
+set lines=90
+set columns=199
